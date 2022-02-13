@@ -1,0 +1,10 @@
+i.fa-brands{
+    padding:8px;
+    font-size: 24px;
+}
+@media (min-width: 768px) {
+
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(4, minmax(0, 1fr))!important;
+    }
+}
