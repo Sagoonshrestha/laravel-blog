@@ -8,3 +8,10 @@ i.fa-brands{
       grid-template-columns: repeat(4, minmax(0, 1fr))!important;
     }
 }
+.background-image{
+  background-image:url("http://localhost:8000/image/keyboard.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height:1080px;
+}

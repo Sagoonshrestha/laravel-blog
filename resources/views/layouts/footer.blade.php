@@ -46,8 +46,9 @@
           COMPANY ELEMENTS
         </h6>
         <p>
-          Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis officia provident vitae 
+          ex illo consequatur aliquam! Asperiores, voluptatem quibusdam?Architecto aspernatur sed eveniet
+           atque itaque perferendis voluptas voluptate praesentium.
         </p>
       </div>
       <div class="">
@@ -132,6 +133,6 @@
   </div>
   <div class="text-center p-6 bg-gray-200">
     <span>© 2021 Copyright:</span>
-    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/"> Elements</a>
   </div>
 </footer>

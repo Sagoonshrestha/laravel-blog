@@ -14,7 +14,7 @@
                             padding: 10px;
                         }
                     </style>
-                    <table>
+                    <table class="sm:rounded-lg">
                         <thead>
                             <tr border="1px">
                             <td>Id</td>

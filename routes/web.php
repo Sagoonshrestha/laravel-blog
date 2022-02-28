@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Formcontroller;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/home', [PageController::class, 'index'])->middleware(['auth'])->name('home');
 Route::get('/contactus',function(){
     return view('contactus');
 })->middleware(['auth'])->name('contactus');
@@ -29,4 +29,5 @@ Route::get('/crud',[Formcontroller::class,'index'])->middleware(['auth'])->name(
 Route::get('/crud/delete/{id}',[Formcontroller::class,'destroy'])->middleware(['auth'])->name('crud.delete');
 Route::get('/crud/edit/{id}',[Formcontroller::class,'edit'])->middleware(['auth'])->name('crud.edit');
 Route::post('/crud/update/{id}',[Formcontroller::class, 'update'])->middleware(['auth'])->name('crud.update');
+Route::resource('/blog',PostsController::class);
 require __DIR__.'/auth.php';
