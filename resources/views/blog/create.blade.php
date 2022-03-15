@@ -12,7 +12,17 @@
             </h1>
         </div>
     </div>
-    
+    @if($errors->any())
+    <div class="w-4/5 m-auto">
+    <ul>
+        @foreach($errors->all() as $error)
+            <li class="w-1/5 text-gray-50 bg-red-700 rounded-2xl py-4">
+                {{$error}}
+            </li>
+        @endforeach
+    </ul>
+    </div>
+    @endif
    <div class="w-4/5 m-auto pt-20">
        <form action="/blog" method="POST" enctype="multipart/form-data">
            @csrf
